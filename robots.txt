@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /orbit-menu.html
+Disallow: /gst_calc.html
+
+Sitemap: https://www.paulwillard.nz/sitemap.xml

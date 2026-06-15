@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.paulwillard.nz/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.paulwillard.nz/history.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.paulwillard.nz/testimonials.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.paulwillard.nz/trucks.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.paulwillard.nz/suspension.html</loc>
+    <priority>0.4</priority>
+  </url>
+</urlset>
