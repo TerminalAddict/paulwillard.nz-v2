@@ -433,7 +433,7 @@ function initHobbiesSelector() {
     },
     motorcycles: {
       title: 'The Motorcyclist',
-      desc: 'I am an avid motorcyclist. I enjoy touring around New Zealand, finding complex roads with great scenery.<br><br>I particularly like playing around with suspension, and cornering in motorcycles, be it on my previous lazy cruiser (Harley Davidson, FXDF), or my hoon bike (Suzuki SV1000s). I\'ve found some really great documentation about suspension tuning ( <a href="suspension.html">found here</a> ).',
+      desc: 'I am an avid motorcyclist. I enjoy touring around New Zealand, finding complex roads with great scenery.<br><br>I particularly like playing around with suspension, and cornering in motorcycles, be it on my current cruiser (Harley Davidson, FXLR), or my previous hoon bike (Suzuki SV1000s). I\'ve found some really great documentation about suspension tuning ( <a href="suspension.html">found here</a> ).',
       pic: 'assets/images/Paul-on-a-harley.webp',
       extra: 'Touring, complex roads, suspension tuning, and cornering.'
     },
@@ -1070,6 +1070,12 @@ function initImageModal() {
   }
 
   function closeModal() {
+    if (lastFocus && typeof lastFocus.focus === 'function' && !modal.contains(lastFocus) && lastFocus.isConnected) {
+      lastFocus.focus({ preventScroll: true });
+    }
+    if (modal.contains(document.activeElement)) {
+      document.activeElement.blur();
+    }
     modal.classList.remove('visible');
     modal.setAttribute('aria-hidden', 'true');
     modal.setAttribute('inert', '');
@@ -1077,7 +1083,6 @@ function initImageModal() {
     image.removeAttribute('src');
     image.alt = '';
     modal.classList.remove('image-modal-fill');
-    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
   }
 
   document.addEventListener('click', (event) => {
