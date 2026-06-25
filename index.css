@@ -1030,6 +1030,7 @@ body::before {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
+  justify-items: center;
 }
 
 .gst-hero,
@@ -1043,6 +1044,7 @@ body::before {
 
 .gst-calculator-card {
   width: 100%;
+  max-width: 760px;
   margin: 0 auto;
 }
 

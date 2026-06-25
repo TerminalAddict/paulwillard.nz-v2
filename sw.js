@@ -5,7 +5,7 @@ workbox.setConfig({
   modulePathPrefix: 'https://storage.googleapis.com/workbox-cdn/releases/7.0.0/'
 });
 
-const SITE_REVISION = '20260615211511';
+const SITE_REVISION = '20260625204006';
 const CACHE_PREFIX = 'paulwillard-nz';
 
 workbox.core.setCacheNameDetails({
